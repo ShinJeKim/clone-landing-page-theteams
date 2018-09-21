@@ -1,0 +1,66 @@
+/* import fonts */
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+* {
+  box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.grid_img {
+  display: block;
+  max-width: 100%;
+  height: 100%;
+}
+.grid_item {
+  width: 33.333%;
+  padding: 0 0 33% 0;
+}
+.grid_item_width2 {
+  width: 66.666%;
+  /* padding: 0 0 33% 0; */
+}
+
+.grid_message_box {
+  background-color: #f3f3f3;
+}
+
+/* .grid_message_box h4 {
+  color: #16a085;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 1.6;
+  padding: 0 10% 0 10%;
+}
+
+.grid_message_box p {
+  font-size: 14px;
+  color: #aaa;
+  line-height: 1.6;
+  padding: 0 10% 0 10%;
+} */
+.grid_div {
+  position: absolute;
+  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+@media (max-width: 991px) {
+  .grid_item {
+    width: 50%;
+    padding: 0 0 50% 0;
+  }
+  .grid_item_width2 {
+    width: 100%;
+    padding: 0 0 50% 0;
+  }
+}
+@media (max-width: 767px) {
+  .grid_item {
+    width: 100%;
+    padding: 0 0 100% 0;
+  }
+}

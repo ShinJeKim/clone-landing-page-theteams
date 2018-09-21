@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="includes/css/about_vanilla.css">
+    <link rel="stylesheet" href="includes/css/animate.css">
+
+    <!-- fontawesome icon css -->
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+
+    <!--jquery -->
+    <script src="includes/js/jQuery-3.3.1.min.js"></script>
+
+    <!-- masonry for grid layout -->
+    <script src="includes/js/masonry.pkgd.min.js"></script>
+
+    <!-- fontawesome icon js -->
+    <script src="node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
+
+    <!-- for wow animation -->
+    <script src="includes/js/wow.min.js"></script>
+
+  </head>
+
+
+  <body>
+    <div id="dark_overlay" class="dark_overlay"></div>
+    <header>
+      <div class="container">
+        <div class="header_menu">
+          <div class="header_list_section">
+            <div class="header_logo_section nav_item">
+              <input type="checkbox" class="open_sidebar_menu" id="open_sidebar_menu">
+              <label for="open_sidebar_menu" class="sidebar_menu_label">
+                <div class="hamburger_icon first_bar"></div>
+                <div class="hamburger_icon second_bar"></div>
+                <div class="hamburger_icon third_bar"></div>
+              </label>
+              <div id="opened_sidebar_menu" class="opened_sidebar_menu">
+                <div class="sidebar_logo">
+                  <a href="https://www.theteams.kr/recruit">
+                    <img class="sidebar_logo_img" src="https://www.theteams.kr/includes/img/logo_sm.png" alt="더팀스 로고">
+                  </a>
+                  <i id="sidebar_close_icon" class="fas fa-times sidebar_close_icon"></i>
+                </div>
+                <div class="sidebar">
+                  <ul>
+                    <li class="sidebar_recruit"><a href="https://www.theteams.kr/recruit"><i class="fas fa-align-left "></i>&nbsp;&nbsp;채용보기</a></li>
+                    <li class="sidebar_career"><a href="https://www.theteams.kr/feed"><i class="fas fa-coffee "></i>&nbsp;&nbsp;커리어피드</a></li>
+                    <li><a href="https://www.theteams.kr/teamterview"><i class="fas fa-newspaper "></i>&nbsp;&nbsp;팀터뷰</a></li>
+                  </ul>
+                </div>
+              </div>
+              <a href="https://www.theteams.kr/recruit">
+                <img class="header_logo_img" src="https://www.theteams.kr/includes/img/logo_sm.png" alt="더팀스 로고">
+              </a>
+            </div>
+            <ul class="header_menu_list nav_item">
+              <li class="header_menu_item"><a href="https://www.theteams.kr/recruit">채용보기</a></li>
+              <li class="header_menu_item"><a href="https://www.theteams.kr/feed">커리어피드</a></li>
+              <li class="header_menu_item"><a href="https://www.theteams.kr/teamterview">팀터뷰</a></li>
+              <li class="header_menu_item"><a href="https://www.theteams.kr/myprofile?ref=nav">공감프로필</a></li>
+            </ul>
+          </div>
+          <div class="header_search_section nav_item">
+            <ul class="header_search_list">
+              <li class="header_search_item header_search">
+                <input class="header_search_bar search_bar" type="search" placeholder="알고싶은 팀, 채용공고, 직군 검색">
+                <i class="fa fa-search header_icon search_icon"></i>
+              </li>
+              <li id="mobile_search" class="header_search_item">
+                <input type="checkbox" id="mobile_search_checkbox" class="mobile_search_checkbox">
+                <span id="mobile_search_icon" class="mobile_search_icon"><i class="fa fa-search"></i></span>
+              </li>
+              <li class="header_search_item">
+                <i id="bell_icon" class="fas fa-bell fa-lg bell_icon header_icon"></i>
+              </li>
+              <li class="header_search_item">
+                <img class="nav_profile_img" src="includes/img/profile_img.png">
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="header_blank_div"></div>
+
+    <div class="body_wrap">
+      <div class="ab_top_green_section">
+        <input id="bottom_search_bar" class="bottom_search_bar" type="search" placeholder="알고싶은 팀, 채용공고, 직군 검색">
+        <div id="bottom_search_bar_background" class="bottom_search_bar_background"></div>
+        <div class="ab_top_green_section_text">
+          <h1>당신의 즐거운 직장생활을 디자인합니다.</h1>
+          <p>Happy career life with THE TEAMS</p>
+        </div>
+      </div>
+
+      <div class="ab_top_white_section">
+        <div class="ab_top_white_skewed"></div>
+        <div class="ab_top_white_section_text">
+          <h2 class="wow bounceInUp">공감채용 더팀스<br>끌리다. 만나다. 일하다</h2>
+          <p>취업? 이직? 새로운 시작을 준비하는 지금, 당신은 행복하시나요?<br>
+            높은 연봉과 훌륭한 복지를 갖춘 회사, 물론 좋습니다.<br>
+            하지만 그 이상의 것, 커리어의 즐거움을 더팀스를 통해 찾으실 수 있습니다.
+          </p>
+        </div>
+        <div class="ab_bottom_white_skewed"></div>
+      </div>
+
+      <div class="ab_middle_grey_section">
+        <div class="container">
+        <div class="ab_middle_grey_section_text">
+          <img src="https://www.theteams.kr/includes/img/about/brand/ab_search_icon.png" alt="검색아이콘">
+          <h3 class="wow bounceInUp ">일하고 싶은 동료, 팀<br>직접 찾아 캐주얼 미팅을 하세요.</h3>
+          <p>
+            더팀스 채용보기, 커리어피드, 팀터뷰를 통해<br>
+            팀 스토리(Story)와 팀 인사이트(Insight)로 먼저 끌리고,<br>
+            캐주얼 미팅을 통해 만나, 함께 일할 수 있는 기회를 가질 수 있습니다.
+          </p>
+        </div>
+          <img class="img_connect" src="https://www.theteams.kr/includes/img/about/brand/ab_connect_thumb02.png" alt="사람들 연결되는 이미지">
+      </div>
+      </div>
+
+      <div class="container">
+        <div class="ab_grid_section">
+          <div class="ab_grid_leaf">
+            <img class="ab_grid_leaf_img" src="https://www.theteams.kr/includes/img/about/brand/ab_sm_icon_leaf.png" alt="나뭇잎 이미지">
+            <div class="ab_grid_leaf_text">
+              가볍게 만나다. 깊게 연결되다.<br>
+              당신과 함께 성장하고 영감을 줄 수 있는 동료와 팀을 만날 수 있습니다.
+            </div>
+          </div>
+        </div>
+        <div class="masonry_grid">
+        	<div class="grid_item">
+        		<div class="grid_div">
+        			<img class="grid_img" src="https://www.theteams.kr/includes/img/about/brand/ab_sm_bg_1.png" alt="theteams" >
+        		</div>
+        	</div>
+        	<div class="grid_item">
+        		<div class="grid_div grid_message_box">
+              <div class="message">
+                <h4 class="wow bounceInUp ">끌리다.<br>설레는 소중한 인연</h4>
+          			<p>즐겁게 일하고 싶으신가요? 일하고 싶은 회사를 찾고 싶으신가요? 당신의 가슴을 뛰게 할 만큼 충분한 팀 스토리와 팀원의 인사이트를 더팀스에서 발견할 수 있습니다.</p>
+              </div>
+        		</div>
+        	</div>
+        	<div class="grid_item">
+        		<div class="grid_div">
+        			<img class="grid_img" src="https://www.theteams.kr/includes/img/about/brand/ab_sm_bg_5.png" alt="theteams" >
+        		</div>
+        	</div>
+        	<div class="grid_item">
+        		<div class="grid_div grid_message_box">
+              <div class="message">
+        			  <h4 class="wow bounceInUp ">만나다.<br>두근거리는 첫 만남</h4>
+        			  <p>직접 만나지 않으면 모르는 것들이 있습니다. 끌리는 팀과 사람에게 캐주얼 미팅을 신청해 커리어 인연을 시작해보세요.</p>
+              </div>
+            </div>
+        	</div>
+        	<div class="grid_item">
+        		<div class="grid_div">
+        			<img class="grid_img" src="https://www.theteams.kr/includes/img/about/brand/ab_sm_bg_2.png" alt="theteams" >
+        		</div>
+        	</div>
+        	<div class="grid_item">
+        		<div class="grid_div">
+        			<img class="grid_img" src="https://www.theteams.kr/includes/img/about/brand/ab_sm_bg_3.png" alt="theteams" >
+        		</div>
+        	</div>
+        	<div class="grid_item grid_item_width2">
+        		<div class="grid_div">
+        			<img class="grid_img" src="https://www.theteams.kr/includes/img/about/brand/ab_sm_bg_4.png" alt="theteams" >
+        		</div>
+        	</div>
+        	<div class="grid_item">
+        		<div class="grid_div grid_message_box">
+              <div class="message">
+        			  <h4 class="wow bounceInUp ">일하다.<br>즐거운 직장 생활</h4>
+        		  	<p>잘 맞는다고 느낀다면 주저하지 마세요. 즐겁게 일할 수 있다는 확신이 든다면 함께 일해보세요. 실패한 커리어는 없습니다. 당신의 커리어는 새로운 커리어 인연을 통해 언제든 새롭게 시작하고 성장할 수 있습니다.</p>
+              </div>
+            </div>
+        	</div>
+        </div>
+      </div>
+
+      <div class="ab_bottom_btn_section">
+        <div class="ab_bottom_btn_section_item">
+          <h2 class="wow bounceInUp">이제, 좋은 사람들과 일하세요</h2>
+          <p>
+            구성원들이 하나의 목표를 향해 함께 나아갈 때 세상이 놀랄 일이 벌어집니다.<br>
+            더팀스에서 당신의 가치를 더해 줄 팀과 팀원을 만나길 간절히 바랍니다.
+          </p>
+          <a href="https://www.theteams.kr/recruit"><button class="ab_bottom_btn_section_btn">채용 보러가기</button></a>
+        </div>
+      </div>
+    </div>
+
+  <footer>
+    <div class="container">
+      <div class="footer_menu_list">
+        <div class="footer_menu_item col_3"><img class="footer_logo_img" src="includes/img/logo.png" alt="더팀스로고"></div>
+        <div class="footer_menu_item col_2">
+          <h4>ABOUT</h4>
+            <ul>
+              <li><a href="https://www.theteams.kr/about">더팀스 스토리</a></li>
+              <li><a href="https://www.theteams.kr/teams/35">운영팀 소개</a></li>
+              <li><a href="https://www.theteams.kr/main/clause">이용약관</a></li>
+            </ul>
+        </div>
+        <div class="footer_menu_item col_2">
+          <h4>GUIDE</h4>
+            <ul>
+              <li><a href="https://www.theteams.kr/about/profile">구직자를 위해</a></li>
+              <li><a href="https://www.theteams.kr/about/overview">채용 담당자를 위해</a></li>
+              <li><a href="https://www.theteams.kr/b2b">채용 EVENT</a></li>
+            </ul>
+        </div>
+        <div class="footer_menu_item col_2">
+          <h4>SERVICE</h4>
+            <ul>
+              <li><a href="https://www.theteams.kr/recruit">채용보기</a></li>
+              <li><a href="https://www.theteams.kr/feed">커리어피드</a></li>
+              <li><a href="https://www.theteams.kr/teamterview">팀터뷰</a></li>
+            </ul>
+        </div>
+        <div class="footer_menu_item col_3">
+          <h4>CONTACT US</h4>
+            <ul>
+              <li><a href="http://naver.me/G1USnhml">서울특별시 서초구<br> 서초동 1445-4 8층</a></li><br>
+              <li><a href="https://www.theteams.kr/about#SupportEmailModal"><i class="fa fa-envelope"></i>THE TEAMS에 문의하기</a></li><br>
+              <li>
+                <a href="https://www.facebook.com/theteams.kr"><i class="fab fa-facebook"></i>페이스북</a>&nbsp; &nbsp;
+                <a href="https://www.theteams.kr/teams/35/feeds"><i class="fab fa-blogger"></i>팀 블로그</a>
+              </li><br><br>
+              <li>직업정보제공사업신고 : 제2017-19호</li>
+            </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer_copyright_text">
+      © THE TEAMS - All rights reserved.
+    </div>
+  </footer>
+  </body>
+</html>
+
+
+<script>
+$(document).ready(function() {
+  $("#mobile_search").click(function() {
+    // 검색 아이콘 클릭 이벤트
+    var window_width = $(window).width(); // 현재 윈도우 width
+
+    // bottom_search_bar 의 display 상태를 가져옴
+    var search_display = $("#bottom_search_bar").css("display");
+    if (search_display == "block") {
+      // 검색창이 열려있으면 아이콘 클릭시 검색창을 닫는다
+      $("#mobile_search_icon").css("color", "#aaaaaa");
+      $("#bottom_search_bar").css("display", "none");
+      $("#bottom_search_bar_background").css("display", "none");
+
+      if (window_width < 769) {
+        $("#bottom_search_bar").css("top", "30px");
+        $("#bottom_search_bar").css("z-index", "999");
+        $("#header_search_list").css("z-index", "1000");
+        $("#header_search_list").css("position", "relative");
+      }
+    } else {
+      // 검색창이 닫혀있으면 아이콘 클릭시 검색창을 연다
+      $("#mobile_search_icon").css("color", "#000");
+      $("#bottom_search_bar").css("display", "block");
+      $("#bottom_search_bar_background").css("display", "block");
+    }
+  });
+
+  $(window).resize(function() {
+    var window_width = $(window).width();
+    var search_display = $("#bottom_search_bar").css("display");
+
+    if (window_width > 992) {
+      $("#bottom_search_bar").css("display", "none");
+      $("#bottom_search_bar_background").css("display", "none");
+      $("#mobile_search_icon").css("color", "#aaaaaa");
+    }
+
+    if (window_width < 769) {
+      if (search_display == "block") {
+        $("#bottom_search_bar").css("top", "-33px");
+        $("#bottom_search_bar").css("z-index", "999");
+        $("#header_search_list").css("z-index", "1000");
+        $("#header_search_list").css("position", "relative");
+      } else {
+        $("#bottom_search_bar").css("top", "0");
+      }
+    }
+  });
+
+  $("#open_sidebar_menu").click(function() {
+    // 사이드바 열릴떄
+    $("#dark_overlay").css("display", "block");
+    $("#opened_sidebar_menu").css("transform", "translateX(0)");
+    $("#opened_sidebar_menu").css("z-index", "999");
+  });
+
+  $("#sidebar_close_icon, #dark_overlay").click(function() {
+    // 사이드바 닫기 아이콘(x) 혹은 overlay 클릭시
+    // 사이드바 닫히고 overlay 없어짐
+    $("#opened_sidebar_menu").css("transform", "translateX(-250px)");
+    $("#dark_overlay").css("display", "none");
+  });
+
+  $(".masonry_grid").masonry({
+    itemSelector: ".grid_item",
+    percentPosition: true
+  });
+
+  /*wow animation을 masonry소스 위에 작성시 masonry grid가 깨짐.
+  꼭! masonry 아래에 작성할 것.*/
+  // wow animation 초기화
+  new WOW().init();
+
+  // if ($("#mobile_search").attr("checked", true)) {
+  //   $("#bottom_search_bar").toggle();
+  //   $("#bottom_search_bar_background").toggle();
+  //   console.log("ddd");
+  // }
+
+  // $("#mobile_search").toggle(
+  //   function() {
+  //     $("#bottom_search_bar").css("display", "block");
+  //   },
+  //   function() {
+  //     $("#bottom_search_bar").css("display", "none");
+  //   }
+  // );
+});
+</script>
